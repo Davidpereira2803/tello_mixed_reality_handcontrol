@@ -51,7 +51,7 @@ from tello_driver.serializers import (
 #face_classifier = cv2.CascadeClassifier(r'/home/david/Projects/TEMO_ros_ws/src/tello_ros_driver_TEMO/haarcascade_frontalface_default.xml')
 face_classifier = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
-classifier = load_model(r'/home/david/Projects/TEMO_ros_ws/src/tello_ros_driver_TEMO/model.h5')
+classifier = load_model(r'/home/david/Projects/Tello_mr_ros_ws/src/tello_mixed_reality_handcontrol/model.h5')
 
 emotion_labels = ['Angry','Disgust','Fear','Happy','Neutral', 'Sad', 'Surprise']
 
