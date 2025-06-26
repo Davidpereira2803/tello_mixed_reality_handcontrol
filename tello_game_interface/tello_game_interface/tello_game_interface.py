@@ -311,7 +311,7 @@ class TelloGame(Node):
         if self.game_start_time and self.game_end_time:
             timestamp = int(self.game_end_time)
             date_str = datetime.fromtimestamp(timestamp / 1000).strftime('%Y-%m-%d')
-            filename = f'/home/david/Projects/TEMO_ros_ws/src/tello_ros_driver_TEMO/game_logs/game_log_{date_str}_{timestamp}.csv'
+            filename = f'/home/david/Projects/Tello_mr_ros_ws/src/tello_mixed_reality_handcontrol/game_logs/game_log_{date_str}_{timestamp}.csv'
 
             events = []
 
