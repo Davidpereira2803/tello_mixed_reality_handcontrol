@@ -27,16 +27,16 @@ class TelloGame(Node):
         self.trigger_state_sub = self.create_subscription(Game, '/trigger_state', self.update_trigger_state, 10)
         self.control_mode_status_sub = self.create_subscription(ModeStatus, '/control_mode_status', self.update_mode, 10)
 
-        self.vosk_model = Model("/home/david/Projects/TEMO_ros_ws/src/tello_ros_driver_TEMO/vosk-model-small-en-us-0.15")
+        self.vosk_model = Model("/home/david/Projects/Tello_mr_ros_ws/src/tello_mixed_reality_handcontrol/vosk-model-small-en-us-0.15")
         self.recognizer = KaldiRecognizer(self.vosk_model, 16000)
 
-        self.alien_image = cv2.imread('/home/david/Projects/TEMO_ros_ws/src/tello_ros_driver_TEMO/images/alien.png', cv2.IMREAD_UNCHANGED)
-        self.dead_alien_image = cv2.imread('/home/david/Projects/TEMO_ros_ws/src/tello_ros_driver_TEMO/images/dead_alien.png', cv2.IMREAD_UNCHANGED)
+        self.alien_image = cv2.imread('/home/david/Projects/Tello_mr_ros_ws/src/tello_mixed_reality_handcontrol/images/alien.png', cv2.IMREAD_UNCHANGED)
+        self.dead_alien_image = cv2.imread('/home/david/Projects/Tello_mr_ros_ws/src/tello_mixed_reality_handcontrol/images/dead_alien.png', cv2.IMREAD_UNCHANGED)
 
         pygame.init()
         pygame.mixer.init()
-        self.gun_sound = pygame.mixer.Sound('/home/david/Projects/TEMO_ros_ws/src/tello_ros_driver_TEMO/sound/gun.wav')
-        self.reload_sound = pygame.mixer.Sound('/home/david/Projects/TEMO_ros_ws/src/tello_ros_driver_TEMO/sound/reload.wav')
+        self.gun_sound = pygame.mixer.Sound('/home/david/Projects/Tello_mr_ros_ws/src/tello_mixed_reality_handcontrol/sound/gun.wav')
+        self.reload_sound = pygame.mixer.Sound('/home/david/Projects/Tello_mr_ros_ws/src/tello_mixed_reality_handcontrol/sound/reload.wav')
 
 
         self.dead_targets = set()
