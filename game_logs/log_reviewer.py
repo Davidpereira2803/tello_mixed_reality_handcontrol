@@ -1,7 +1,7 @@
 import csv
 from datetime import datetime
 
-log_file = "/home/david/Projects/TEMO_ros_ws/src/tello_ros_driver_TEMO/game_logs/ps4_game_log_2025-06-24_1750778521000.csv"
+log_file = "/home/david/Projects/Tello_mr_ros_ws/src/tello_mixed_reality_handcontrol/game_logs/ps4_game_log_2025-06-24_1750778521000.csv"
 
 game_start = None
 game_end = None
