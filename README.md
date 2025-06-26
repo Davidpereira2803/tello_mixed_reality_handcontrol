@@ -1,4 +1,4 @@
-# Tello ROS2 Wrapper TEMO (Fork)
+# Controlling Drone via Hand Movements in Mixed Reality Games
 (This is not the original README.md -> [View Original README](docs/ORIGINAL_README.md))
 
 ## Introduction
