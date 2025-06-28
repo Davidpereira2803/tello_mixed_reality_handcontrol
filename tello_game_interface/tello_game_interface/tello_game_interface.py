@@ -315,28 +315,28 @@ class TelloGame(Node):
 
             events = []
 
-            events.append(("Game_Start_Time", int(self.game_start_time*1000)))
+            events.append(("Game_Start_Time", int(self.game_start_time*1000),""))
 
             for hit in self.hit_timestamps:
                 events.append(("Target_Hit", int(hit['timestamp']), f"ID {hit['id']}"))
 
             for reload_time in self.reload_timestamps:
-                events.append(("Reload", int(reload_time)))
+                events.append(("Reload", int(reload_time),""))
 
             for shoot_time in self.shoot_timestamps:
-                events.append(("Shot_Fired", int(shoot_time)))
+                events.append(("Shot_Fired", int(shoot_time),""))
 
-            events.append(("Game_End_Time", int(self.game_end_time)))
-            events.append(("Score", self.score))
-            events.append(("Total_Shots_Fired", self.total_shots_fired))
+            events.append(("Game_End_Time", int(self.game_end_time),""))
+            events.append(("Score", self.score,""))
+            events.append(("Total_Shots_Fired", self.total_shots_fired,""))
 
             events.sort(key=lambda e: e[1])
 
             with open(filename, 'w', newline='') as csvfile:
                 writer = csv.writer(csvfile)
                 writer.writerow(["Event", "Timestamp", "Details"])
-                for event, details in events:
-                    writer.writerow([event, details])
+                for event, timestamp, details in events:
+                    writer.writerow([event, timestamp,details])
 
             
             self.hit_timestamps = []

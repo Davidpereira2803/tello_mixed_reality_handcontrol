@@ -1,0 +1,17 @@
+Event,Timestamp,Details
+Score,1,
+Total_Shots_Fired,10,
+Game_Start_Time,1751112618120,
+Shot_Fired,1751112697741,
+Shot_Fired,1751112703993,
+Shot_Fired,1751112714292,
+Shot_Fired,1751112795314,
+Shot_Fired,1751112796461,
+Shot_Fired,1751112798119,
+Shot_Fired,1751112799523,
+Target_Hit,1751112799524,ID 3
+Reload,1751112801188,
+Shot_Fired,1751112850192,
+Shot_Fired,1751112851723,
+Shot_Fired,1751112890219,
+Game_End_Time,1751112918152,
