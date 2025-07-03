@@ -2,7 +2,7 @@
 #include <WiFiUdp.h>
 #include <MPU9250_asukiaaa.h>
 
-const char* apSSID = "DroneAP";
+const char* apSSID = "ESPMPU";
 const char* apPassword = "12345678";
 
 IPAddress laptopIP(192, 168,); // Replace with your laptop's IP address
